@@ -9,7 +9,6 @@ from keras.models import load_model
 
 app = Flask(__name__)
 model = load_model("./saved_model/MNIST")
-classes = [0,1,2,3,4,5,6,7,8,9]
 
 @app.route('/', methods=['GET'])
 def home():
